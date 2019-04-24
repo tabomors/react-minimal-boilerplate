@@ -1,7 +1,12 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
 module.exports = {
   devtool: "source-map",
+  optimization: {
+    minimizer: [new OptimizeCSSAssetsPlugin({})],
+  },
   module: {
     rules: [
       {
