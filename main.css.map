@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/App.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;;AAEA;AACA;AACA;AACA,C","file":"main.css","sourcesContent":["*, \n*:before, \n*:after {\n  box-sizing: border-box;\n}\n\nbody {\n  background-color: rebeccapurple;\n  color: #fff;\n}"],"sourceRoot":""}
