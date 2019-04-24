@@ -1,7 +1,7 @@
 {
   "name": "react-minimal-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a super minimal boilerplate for React development, based on https://www.valentinog.com/blog/webpack-tutorial/",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
@@ -10,7 +10,7 @@
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ignore-path .gitignore ."
   },
-  "author": "",
+  "author": "tabomors",
   "license": "ISC",
   "dependencies": {
     "react": "^16.8.6",
