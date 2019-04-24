@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production ./src/index.js --output ./dist/app.js",
+    "build": "webpack --mode production",
     "deploy:gh-pages": "rimraf dist && npm run build && gh-pages -d dist",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ignore-path .gitignore ."
