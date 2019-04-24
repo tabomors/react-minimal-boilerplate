@@ -1,7 +1,5 @@
-import React from "react";
-import style from "./App.css";
+import React from 'react';
+import './App.css';
 
-const App = () => {
-  return <p>Hello from React!</p>;
-};
+const App = () => <p>Hello from React!</p>;
 export default App;

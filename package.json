@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production ./src/index.js --output ./dist/app.js",
-    "deploy:gh-pages": "rimraf dist && npm run build && gh-pages -d dist"
+    "deploy:gh-pages": "rimraf dist && npm run build && gh-pages -d dist",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ignore-path .gitignore ."
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +22,11 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
     "gh-pages": "^2.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
