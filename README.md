@@ -7,11 +7,17 @@ Development:
 ```
 npm i
 npm run dev
-```
 
+```
 Production:
 
 ```
 npm i
 npm run build
+```
+
+## Deployment:
+
+```
+npm run deploy:gh-pages
 ```
