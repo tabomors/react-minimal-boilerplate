@@ -1,12 +1,1 @@
-*, 
-*:before, 
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: rebeccapurple;
-  color: #fff;
-}
-
-/*# sourceMappingURL=main.css.map*/
+*,:after,:before{box-sizing:border-box}body{background-color:#639;color:#fff}
