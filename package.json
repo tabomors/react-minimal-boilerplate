@@ -4,8 +4,8 @@
   "description": "This is a super minimal boilerplate for React development, based on https://www.valentinog.com/blog/webpack-tutorial/",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open --env=dev",
-    "build": "webpack --mode production --env=prod",
+    "dev": "webpack-dev-server --open --env=dev",
+    "build": "webpack --env=prod",
     "deploy:gh-pages": "rimraf dist && npm run build && gh-pages -d dist",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ignore-path .gitignore ."
