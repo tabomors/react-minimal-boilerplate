@@ -8,7 +8,8 @@
     "build": "webpack --env=prod",
     "deploy:gh-pages": "rimraf dist && npm run build && rimraf dist/report.html && gh-pages -d dist",
     "lint": "eslint .",
-    "format": "pretty-quick"
+    "format": "pretty-quick",
+    "test": "jest"
   },
   "author": "tabomors",
   "license": "ISC",
@@ -29,10 +30,12 @@
     "gh-pages": "^2.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.8.0",
     "mini-css-extract-plugin": "^0.6.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.11.0",
+    "react-testing-library": "^7.0.1",
     "rimraf": "^2.6.3",
     "uglifyjs-webpack-plugin": "^2.1.3",
     "webpack": "^4.29.6",
