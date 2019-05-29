@@ -1,7 +1,7 @@
 {
   "name": "react-minimal-boilerplate",
   "version": "1.0.0",
-  "description": "This is a super minimal boilerplate for React development, based on https://www.valentinog.com/blog/webpack-tutorial/",
+  "description": "This is a minimal boilerplate for React development",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --env=dev",
