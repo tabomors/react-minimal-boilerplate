@@ -1,6 +1,4 @@
-function generateConfig(env, options) {
-  console.log('Webpack started for env', env);
-
+function generateConfig(env /*options*/) {
   // eslint-disable-next-line
   return require(`./webpack.config.${env}.js`);
 }
