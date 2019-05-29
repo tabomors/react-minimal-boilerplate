@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Hello.css';
+import { API } from '../constants';
 
 const Hello = () => {
   const [sender, setSender] = useState('React');
   useEffect(() => {
-    fetch('/api/hello')
+    fetch(`${API}/hello`)
       .then(res => {
         return res.json();
       })

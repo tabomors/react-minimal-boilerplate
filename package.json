@@ -9,7 +9,9 @@
     "deploy:gh-pages": "rimraf dist && npm run build && rimraf dist/report.html && gh-pages -d dist",
     "lint": "eslint .",
     "format": "pretty-quick",
-    "test": "jest"
+    "test": "jest",
+    "start": "node .",
+    "heroku-postbuild": "rimraf dist && npm run build && rimraf dist/report.html"
   },
   "author": "tabomors",
   "license": "ISC",
