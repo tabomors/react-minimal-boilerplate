@@ -4,8 +4,8 @@
   "description": "This is a minimal boilerplate for React development",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --env=dev",
-    "build": "webpack --env=prod",
+    "dev": "webpack-dev-server --config ./webpack/webpack.config.js --open --env=dev",
+    "build": "webpack --config ./webpack/webpack.config.js --env=prod",
     "deploy:gh-pages": "rimraf dist && npm run build && rimraf dist/report.html && gh-pages -d dist",
     "lint": "eslint .",
     "format": "pretty-quick",

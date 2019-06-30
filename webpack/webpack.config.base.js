@@ -2,8 +2,8 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const APP_DIR = path.resolve(__dirname, './src');
-const BUILD_DIR = path.resolve(__dirname, './dist');
+const APP_DIR = path.resolve(__dirname, '..', 'src');
+const BUILD_DIR = path.resolve(__dirname, '..', 'dist');
 
 const entry = path.join(APP_DIR, 'index.js');
 const output = { path: BUILD_DIR, filename: 'bundle.js' };
