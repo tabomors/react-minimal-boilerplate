@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Hello.css';
 import { API } from '../constants';
 
-/* eslint-disable no-console */
-
 const Hello = () => {
   const [sender, setSender] = useState('React');
   useEffect(() => {
