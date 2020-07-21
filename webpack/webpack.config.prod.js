@@ -8,10 +8,16 @@ const baseConfig = require('./webpack.config.base.js');
 module.exports = merge(baseConfig, {
   mode: 'production',
   output: {
-    publicPath: './'
+    publicPath: './',
   },
+  devtool: 'inline-source-map',
   optimization: {
-    minimizer: [new OptimizeCSSAssetsPlugin({}), new UglifyJsPlugin({ test: /\.js(\?.*)?$/i })]
+    minimizer: [
+      new OptimizeCSSAssetsPlugin({}),
+      new UglifyJsPlugin({ test: /\.js(\?.*)?$/i }),
+    ],
   },
-  plugins: [new BundleAnalyzerPlugin({ analyzerMode: 'static', openAnalyzer: false })]
+  plugins: [
+    new BundleAnalyzerPlugin({ analyzerMode: 'static', openAnalyzer: false }),
+  ],
 });
