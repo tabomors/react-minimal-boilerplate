@@ -20,7 +20,7 @@ const Hello = () => {
       });
   }, []);
 
-  return <p className="hello">Hello from {sender}!</p>;
+  return <p className="hello">Hello asdaqweqewczxc from {sender}!</p>;
 };
 
 export default Hello;
