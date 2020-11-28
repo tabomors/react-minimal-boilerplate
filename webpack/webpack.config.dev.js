@@ -4,6 +4,7 @@ const baseConfig = require('./webpack.config.base.js');
 module.exports = merge(baseConfig, {
   mode: "development",
   devServer: {
+    publicPath: '/',
     proxy: {
       // NOTE: Proxying some URLs can be useful when you have a separate API backend development server and you want to send API requests on the same domain.
       // Check the docs: https://webpack.js.org/configuration/dev-server/#devserverproxy
@@ -16,5 +17,5 @@ module.exports = merge(baseConfig, {
   output: {
     publicPath: '/'
   },
-  devtool: 'source-map'
+  devtool: 'eval-source-map'
 });
